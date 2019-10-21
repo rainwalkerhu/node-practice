@@ -1,0 +1,28 @@
+{
+  "name": "node-stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stream.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/lodash": "^4.14.137",
+    "lodash": "^4.17.15",
+    "tslint": "^5.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "eslint-plugin-typescript": "^0.14.0",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0",
+    "tsc-init": "^2.1.0",
+    "typescript": "^3.5.3",
+    "typescript-eslint-parser": "^22.0.0"
+  }
+}
